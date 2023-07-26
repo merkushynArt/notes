@@ -7,6 +7,23 @@
    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-   <h1>start</h1>
+   <!-- Форма для додавання нової нотатки -->
+   <form id="addNoteForm">
+      <label for="noteContent">Зміст замітки:</label>
+      <input type="text" id="noteContent" required>
+      <label for="noteCategory">Категорія:</label>
+      <select id="noteCategory">
+         <option value="Задача">Завдання</option>
+         <option value="Случайная мысль">Випадкова думка</option>
+         <option value="Идея">Ідея</option>
+      </select>
+      <button type="submit">Додати замітку</button>
+   </form>
+
+   <!-- Блок для відображення нотаток -->
+   <div id="notesContainer"></div>
+
+   <!-- Блок для відображення таблиці-зведення -->
+   <div id="summaryContainer"></div>
 </body>
 </html>
