@@ -1,4 +1,4 @@
-let notes = [
+export let notes = [
    {
       id: 1,
       creationTime: '2023-07-26T00:00:00',
